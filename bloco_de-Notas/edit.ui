@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>edit</class>
+ <widget class="QMainWindow" name="edit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>541</width>
+    <height>523</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>edit</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>450</y>
+      <width>510</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>510</width>
+      <height>450</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>541</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNovo"/>
+   <addaction name="separator"/>
+   <addaction name="actionabrir"/>
+   <addaction name="separator"/>
+   <addaction name="actionSalvar_Como"/>
+   <addaction name="separator"/>
+   <addaction name="actionSalvar"/>
+  </widget>
+  <action name="actionabrir">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/new/prefix1/imagens/Abrir.jpg</normaloff>:/new/prefix1/imagens/Abrir.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>abrir</string>
+   </property>
+  </action>
+  <action name="actionNovo">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/new/prefix1/imagens/Novo.jpg</normaloff>:/new/prefix1/imagens/Novo.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Novo</string>
+   </property>
+  </action>
+  <action name="actionSalvar">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/new/prefix1/imagens/Salvar.png</normaloff>:/new/prefix1/imagens/Salvar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salvar</string>
+   </property>
+  </action>
+  <action name="actionSalvar_Como">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/new/prefix1/imagens/Salvar Como.jpg</normaloff>:/new/prefix1/imagens/Salvar Como.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Salvar Como</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
