@@ -24,13 +24,13 @@
      </rect>
     </property>
    </widget>
-   <widget class="QPlainTextEdit" name="plainTextEdit">
+   <widget class="QTextEdit" name="textEdit">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>510</width>
-      <height>450</height>
+      <width>511</width>
+      <height>451</height>
      </rect>
     </property>
    </widget>
@@ -63,6 +63,13 @@
    <addaction name="actionSalvar_Como"/>
    <addaction name="separator"/>
    <addaction name="actionSalvar"/>
+   <addaction name="separator"/>
+   <addaction name="actionfonte"/>
+   <addaction name="separator"/>
+   <addaction name="actionCor_do_background"/>
+   <addaction name="separator"/>
+   <addaction name="actionCor_da_letra"/>
+   <addaction name="separator"/>
   </widget>
   <action name="actionabrir">
    <property name="icon">
@@ -98,6 +105,33 @@
    </property>
    <property name="text">
     <string>Salvar Como</string>
+   </property>
+  </action>
+  <action name="actionCor_da_letra">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/new/prefix1/imagens/cor da letra.png</normaloff>:/new/prefix1/imagens/cor da letra.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cor da letra</string>
+   </property>
+  </action>
+  <action name="actionCor_do_background">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/new/prefix1/imagens/cor de fundo.jpg</normaloff>:/new/prefix1/imagens/cor de fundo.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Cor do background</string>
+   </property>
+  </action>
+  <action name="actionfonte">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/new/prefix1/imagens/tamanho da fonte.png</normaloff>:/new/prefix1/imagens/tamanho da fonte.png</iconset>
+   </property>
+   <property name="text">
+    <string>fonte</string>
    </property>
   </action>
  </widget>

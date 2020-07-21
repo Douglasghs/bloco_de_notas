@@ -4,5 +4,8 @@
         <file>imagens/Novo.jpg</file>
         <file>imagens/Salvar Como.jpg</file>
         <file>imagens/Salvar.png</file>
+        <file>imagens/cor da letra.png</file>
+        <file>imagens/cor de fundo.jpg</file>
+        <file>imagens/tamanho da fonte.png</file>
     </qresource>
 </RCC>

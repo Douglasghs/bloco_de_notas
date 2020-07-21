@@ -24,6 +24,12 @@ private slots:
 
     void on_actionSalvar_triggered();
 
+    void on_actionfonte_triggered();
+
+    void on_actionCor_da_letra_triggered();
+
+    void on_actionCor_do_background_triggered();
+
 private:
     Ui::edit *ui;
     QString local_arquivo;

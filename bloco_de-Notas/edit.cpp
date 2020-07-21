@@ -3,6 +3,10 @@
 #include <QFile>
 #include <QFileDialog>
 #include <QTextStream>
+#include <QFont>
+#include <QFontDialog>
+#include <QColor>
+#include <QColorDialog>
 
 edit::edit(QWidget *parent)
     : QMainWindow(parent)
@@ -32,7 +36,7 @@ void edit::on_actionabrir_triggered()
     }
     QTextStream saida(&arquivo);
     QString texto= saida.readAll();
-    ui->plainTextEdit->setPlainText(texto);
+    ui->textEdit->setPlainText(texto);
     arquivo.close();
 
 
@@ -40,8 +44,8 @@ void edit::on_actionabrir_triggered()
 
 void edit::on_actionNovo_triggered()
 {
-    ui->plainTextEdit->clear();
-    ui->plainTextEdit->setFocus();
+    ui->textEdit->clear();
+    ui->textEdit->setFocus();
     local_arquivo="";
 }
 
@@ -55,7 +59,7 @@ void edit::on_actionSalvar_Como_triggered()
         ui->textEdit_2->setText("Arquivo salvo");
     }
     QTextStream entrada(&arquivo);
-    QString texto = ui->plainTextEdit->toPlainText();
+    QString texto = ui->textEdit->toPlainText();
     entrada << texto;
     arquivo.close();
 
@@ -68,7 +72,26 @@ void edit::on_actionSalvar_triggered()
         ui->textEdit_2->setText("Arquivo salvo");
     }
     QTextStream entrada(&arquivo);
-    QString texto = ui->plainTextEdit->toPlainText();
+    QString texto = ui->textEdit->toPlainText();
     entrada << texto;
     arquivo.close();
+}
+
+void edit::on_actionfonte_triggered()
+{
+    bool ok = true;
+    QFont fonte = QFontDialog::getFont(&ok,this);
+    ui->textEdit->setFont(fonte);
+}
+
+void edit::on_actionCor_da_letra_triggered()
+{
+    QColor cor =QColorDialog::getColor(Qt::white,this);
+    ui->textEdit->setTextColor(cor);
+}
+
+void edit::on_actionCor_do_background_triggered()
+{
+    QColor cor = QColorDialog::getColor(Qt::white,this);
+    ui->textEdit->setTextBackgroundColor(cor);
 }
