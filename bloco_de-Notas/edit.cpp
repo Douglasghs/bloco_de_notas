@@ -34,7 +34,7 @@ void edit::on_actionabrir_triggered()
     QString texto= saida.readAll();
     ui->plainTextEdit->setPlainText(texto);
     arquivo.close();
-    ui->textEdit_2->setText("dhgfcud");
+
 
 }
 
@@ -43,4 +43,32 @@ void edit::on_actionNovo_triggered()
     ui->plainTextEdit->clear();
     ui->plainTextEdit->setFocus();
     local_arquivo="";
+}
+
+void edit::on_actionSalvar_Como_triggered()
+{
+    QString filtro = "Todos os arquivos(*.*) ;; Arquivos de texto(*.txt)";
+    QString nome_arquivo = QFileDialog::getSaveFileName(this,"Gerenciador de arquivos",QDir::homePath(),filtro);
+    QFile arquivo(nome_arquivo);
+    local_arquivo = nome_arquivo;
+    if(!arquivo.open(QFile::WriteOnly | QFile::Text)){
+        ui->textEdit_2->setText("Arquivo salvo");
+    }
+    QTextStream entrada(&arquivo);
+    QString texto = ui->plainTextEdit->toPlainText();
+    entrada << texto;
+    arquivo.close();
+
+}
+
+void edit::on_actionSalvar_triggered()
+{
+    QFile arquivo(local_arquivo);
+    if(!arquivo.open(QFile::WriteOnly | QFile::Text)){
+        ui->textEdit_2->setText("Arquivo salvo");
+    }
+    QTextStream entrada(&arquivo);
+    QString texto = ui->plainTextEdit->toPlainText();
+    entrada << texto;
+    arquivo.close();
 }

@@ -20,6 +20,10 @@ private slots:
 
     void on_actionNovo_triggered();
 
+    void on_actionSalvar_Como_triggered();
+
+    void on_actionSalvar_triggered();
+
 private:
     Ui::edit *ui;
     QString local_arquivo;
