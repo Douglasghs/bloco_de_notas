@@ -1,5 +1,6 @@
 #include "edit.h"
 #include "ui_edit.h"
+
 #include <QFile>
 #include <QFileDialog>
 #include <QTextStream>
@@ -94,4 +95,29 @@ void edit::on_actionCor_do_background_triggered()
 {
     QColor cor = QColorDialog::getColor(Qt::white,this);
     ui->textEdit->setTextBackgroundColor(cor);
+}
+
+void edit::on_actionCortar_triggered()
+{
+    ui->textEdit->cut();
+}
+
+void edit::on_actionColar_triggered()
+{
+    ui->textEdit->paste();
+}
+
+void edit::on_actionCopiar_triggered()
+{
+    ui->textEdit->copy();
+}
+
+void edit::on_actionRefazer_triggered()
+{
+    ui->textEdit->redo();
+}
+
+void edit::on_actionDesfazer_triggered()
+{
+    ui->textEdit->undo();
 }

@@ -30,6 +30,16 @@ private slots:
 
     void on_actionCor_do_background_triggered();
 
+    void on_actionCortar_triggered();
+
+    void on_actionColar_triggered();
+
+    void on_actionCopiar_triggered();
+
+    void on_actionRefazer_triggered();
+
+    void on_actionDesfazer_triggered();
+
 private:
     Ui::edit *ui;
     QString local_arquivo;

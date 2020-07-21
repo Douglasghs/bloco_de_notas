@@ -7,5 +7,10 @@
         <file>imagens/cor da letra.png</file>
         <file>imagens/cor de fundo.jpg</file>
         <file>imagens/tamanho da fonte.png</file>
+        <file>imagens/colar.jpg</file>
+        <file>imagens/copiar.png</file>
+        <file>imagens/cortar.png</file>
+        <file>imagens/Desfazer.jpg</file>
+        <file>imagens/refazer.jpg</file>
     </qresource>
 </RCC>

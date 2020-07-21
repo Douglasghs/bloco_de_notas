@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>541</width>
-    <height>523</height>
+    <height>488</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>450</y>
+      <y>420</y>
       <width>510</width>
       <height>30</height>
      </rect>
@@ -30,7 +30,7 @@
       <x>0</x>
       <y>0</y>
       <width>511</width>
-      <height>451</height>
+      <height>421</height>
      </rect>
     </property>
    </widget>
@@ -69,6 +69,16 @@
    <addaction name="actionCor_do_background"/>
    <addaction name="separator"/>
    <addaction name="actionCor_da_letra"/>
+   <addaction name="separator"/>
+   <addaction name="actionCortar"/>
+   <addaction name="separator"/>
+   <addaction name="actionColar"/>
+   <addaction name="separator"/>
+   <addaction name="actionCopiar"/>
+   <addaction name="separator"/>
+   <addaction name="actionRefazer"/>
+   <addaction name="separator"/>
+   <addaction name="actionDesfazer"/>
    <addaction name="separator"/>
   </widget>
   <action name="actionabrir">
@@ -132,6 +142,51 @@
    </property>
    <property name="text">
     <string>fonte</string>
+   </property>
+  </action>
+  <action name="actionCortar">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/new/prefix1/imagens/cortar.png</normaloff>:/new/prefix1/imagens/cortar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cortar</string>
+   </property>
+  </action>
+  <action name="actionColar">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/new/prefix1/imagens/colar.jpg</normaloff>:/new/prefix1/imagens/colar.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Colar</string>
+   </property>
+  </action>
+  <action name="actionCopiar">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/new/prefix1/imagens/copiar.png</normaloff>:/new/prefix1/imagens/copiar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copiar</string>
+   </property>
+  </action>
+  <action name="actionRefazer">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/new/prefix1/imagens/refazer.jpg</normaloff>:/new/prefix1/imagens/refazer.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Refazer</string>
+   </property>
+  </action>
+  <action name="actionDesfazer">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/new/prefix1/imagens/Desfazer.jpg</normaloff>:/new/prefix1/imagens/Desfazer.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Desfazer</string>
    </property>
   </action>
  </widget>
